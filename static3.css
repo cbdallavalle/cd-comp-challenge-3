@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #5C84BC;
+  height: 4.6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3 {
+  font-size: .8em;
+  margin: .2em 0;
+}
+
+h4 {
+  width: 5em;
+  margin: 0;
+  display: inline;
+  font-size: 1em;
+}
+
+.table-header {
+  width: 95%;
+  background-color: grey;
+  height: 50px;
+}
+
+ul {
+  padding: 0;
+}
+
+.circles {
+  display: inline-block;
+  width: 6.8em;
+  height: 6.8em;
+  border-radius: 50%;
+  border: 1em solid;
+  border-color: #DDE6EB;
+  text-align: center;
+}
+
+.circles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fa-circle:before {
+    content: "\f111";
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.head-sections {
+  display: inline;
+}
+
+.job {
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-bar li {
+  display: none;
+}
+
+.pages {
+  width: 100%;
+  background-color: blue;
+  height: 2em;
+  padding-top: 1em;
+}
+
+.pages li {
+  display: none;
+}
+
+.profile-pic {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: pink;
+  margin: auto;
+}
+
+.graph {
+  width: 100%;
+  height: 200px;
+  background-color: salmon;
+}
+
+#blue {
+  border-right-color: #1E3B5B;
+}
+
+#green {
+  background-color: #417F31;
+  border: none;
+}
+
+#red {
+  border-right-color: #99282C;
+  border-bottom-color: #99282C;
+}
+
+#summary {
+  display: block;
+  text-align: left;
+}
+
+#town {
+  margin-right: 1.6em;
+}
+
+#yellow {
+  border-right-color: #C38430;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+  width: 4.6em;
+  background-color: #5C84BC;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  .figure-container {
+    margin-left: 74px;
+    border: 2px solid black;
+  }
+
+  .circles-container {
+    width: 100%;
+  }
+
+  .graph {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1440px) {
+  .figure-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .circles-container {
+    width: 464px;
+  }
+
+  .graph {
+    width: 215px;
+  }
+}
