@@ -9,12 +9,14 @@
   <link rel="stylesheet" type="text/css" href="static3.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header class="main-header">
     <section>
       <div class="profile-pic"></div>
       <h3>Sorting Hat <i class="fa fa-caret-down" aria-hidden="true"></i></h3>
@@ -55,7 +57,7 @@
 
   <!-- SEARCH BAR -->
   <nav class="search-nav">
-    <button class="search-bar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <button class="search-bar" id="three-bars"><i class="fa fa-bars" aria-hidden="true"></i></button>
     <label for="search-input"></label>
     <input type="text" class="search-bar" id="search-input" placeholder="search"></input>
     <button class="search-bar"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
@@ -69,18 +71,18 @@
       <li id="town"><i class="fa fa-map-marker" aria-hidden="true"></i>Hogwarts</li>
       <li>House to be named</li>
     </ul>
-    <button class="job-buttons">Open</button>
-    <button class="job-buttons">Bkmr</button>
-    <button class="job-buttons">Edit</button>
-    <button class="job-buttons">Trash</button>
+    <button class="job-btns"><i class="fa fa-circle" aria-hidden="true"></i> Open</button>
+    <button class="job-btns"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+    <button class="job-btns"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button class="job-btns"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
     <ul class="pages">
-      <li id="summary">SUMMARY</li>
-      <li>APPLICANTS</li>
-      <li>JOB BOARD</li>
-      <li>INTERVIEWS</li>
+      <li id="summary">HOUSE AFFINITY</li>
+      <li>PERSONALITY</li>
+      <li>LIKES</li>
+      <li>DISLIKES</li>
       <li>ACTIVITY</li>
-      <li>BROADCAST</li>
-      <li>NOTIFICATIONS</li>
+      <li>FAMILY</li>
+      <li>HEALTH</li>
     </ul>
   </section>
 
@@ -97,78 +99,91 @@
       </form>
     </section>
 
-    <hr>
+    <hr id="page-break">
 
-    <table>
-      <thead>
-        <tr class="table-header">
-          <th colspan="2">CHARACTER DESCRIPTION <button>EDIT</button></th>
-        </tr>
-      </thead>
-      
-      <tbody>
-        <tr>
-          <td class="table-caption">POSITION TITLE</td>
-          <td class="table-answers">Wizard training</td>
-        </tr>
-        <tr>
-          <td class="table-caption">LOCATION</td>
-          <td class="table-answers">River Heights, IA</td>
-        </tr>
-        <tr>
-          <td class="table-caption">EMPLOYMENT TYPE</td>
-          <td class="table-answers">Part-time</td>
-        </tr>
-        <tr>
-          <td class="table-caption">EXPERIENCE</td>
-          <td class="table-answers">Master</td>
-        </tr>
-        <tr>
-          <td class="table-caption">STATUS</td>
-          <td class="table-answers">Open after my next case</td>
-        </tr>
-        <tr>
-          <td class="table-caption">DESCRIPTION</td>
-          <td class="table-answers">As an amateur detective, I started investigating local mysteries in my home town of River Heights. I discovered the location of woman's long lost family heirloom, which had been stolen by burglars for it's high value. Friends of my friends and family started asking for my assistance in disappearances, ghostly encounters, and break ins. My popularity grew as I solved mystery after mystery, and now I am called world wide to solve cases. In my latest case, I found a missing Icelandic captain by solving an old pirate treasure map.</td>
-        </tr>
-        <tr>
-          <td class="table-caption">HIRING LEAD</td>
-          <td class="table-answers"><img alt="headshot of Ned Nickerson">Ned Nickerson</td>
-        </tr>
-        <tr>
-          <td class="table-caption">APPROVED SALARY</td>
-          <td class="table-answers">$1,000,000</td>
-        </tr>
-      </tbody>
-    </table>
+    <section class="description-container">
+      <article class="character-container">
+          <header class="character-header">
+            <h2 id="character-description">CHARACTER DESCRIPTION <h2>
+            <button id="edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button>
+          </header>
+        
+          <p class="caption">GENDER <span class="answers">Female</span>
+          </p>
 
-    <article>
-      <button class="facebook">Post to Facebook</button>
-      <button class="Twitter">Tweet this Job</button>
-      <button class="LinkedIn">Post to LinkedIn</button>
+          <hr>
 
-      <form>
-        <h2>Link to this Job</h2>
-        <p>I come close. Let me show you everything I know. Jungle slang. Spinning round my head and outta state.</p>
-        <label for="copy-job-link"></label>
-        <input type="submit" name="copy-job-link" id="copy-job-link">
-      </form>
+          <p class="caption">HOME TOWN 
+          <span class="answers">Whitby, England</span>
+          </p>
+          
+          <hr>
 
-      <form>
-        <h2>Link to this Job</h2>
-        <p>Silky smooth perfume. Wanna take a chance. Wanna sip the smooth and kick it in the sand.</p>
-        <label for="copy-button-link"></label>
-        <input type="submit" name="copy-button-link" id="copy-button-link">
-      </form>
+          <p class="caption">AGE 
+          <span class="answers">11</span>
+          </p>
+
+          <hr>
+          
+          <p class="caption" id="wand">WAND 
+          <span class="answers">10¾" long, made of vine wood, and a dragon heartstring core</span>
+          </p>
+
+          <hr>
+          
+            <p class="caption">STATUS <span class="answers">Anxious</span>
+            </p>
+
+          <hr>
+          <div id="description-div">
+            <p class="caption" id="description-cell">DESCRIPTION 
+            <span class="answers">An overachiever who excels academically and is of a very logical, upright and good character. She is levelheaded, book-smart, and very logical. She is often bossy yet unfailingly dutiful and loyal to her friends—a person who can be counted on. She also has quite a lot of vulnerability in her personality.</span>
+            </p>
+          </div>
+          <hr>
+
+            <p class="caption">PROFILE
+            <span class="answers"><img alt="headshot of Hermione Granger"></span>
+
+          <hr>
+
+            <p class="caption">HOUSE 
+            <span class="answers">TBD</span>
+            </p>
+      </article>
+
+      <article class="connect-container">
+        <button class="links" id="facebook">See Facebook</button>
+        <button class="links" id="twitter">See Twitter</button>
+        <button class="links" id="linkedIn">See Instagram</button>
+
+        <form class="connect-forms">
+          <h2 class="connect-head"><i class="fa fa-globe" aria-hidden="true"></i>   Send an Owl</h2>
+          <p>I come close. Let me show you everything I know. Jungle slang.</p>
+          <label for="copy-job-link"></label>
+          <div class="copy-link">https://www.pottermore.com
+            <button class="copy-btn">Copy</button>
+          </div>
+        </form>
+
+        <form class="connect-forms">
+          <h2 class="connect-head"><i class="fa fa-address-card-o" aria-hidden="true"></i>  Check Patronus</h2>
+          <p>Silky smooth perfume. Wanna take a chance. Wanna sip the smooth.</p>
+          <label for="copy-button-link"></label>
+          <div class="copy-link">https://www.pottermore.com
+            <button class="copy-btn">Copy</button>
+          </div>
+        </form>
 
 
-      <form>
-        <h2>Link to this Job</h2>
-        <p>THis ain't gonna work, my mine wicked words and tipsy topsy slurs. I can't take this place. I just wanna go where I can get some space.</p>
-        <label for="copy-resume-link"></label>
-        <input type="submit" name="copy-resume-link" id="copy-resume-link">
-      </form>
-    </article>
+        <form class="connect-forms">
+          <h2 class="connect-head"><i class="fa fa-paper-plane" aria-hidden="true"></i>   See Magical Abilities</h2>
+          <p>THis ain't gonna work, my mine wicked words and tipsy topsy slurs.</p>
+          <label for="copy-resume-link"></label>
+          <div class="copy-link">https://www.pottermore.com</div>
+        </form>
+      </article>
+    </section>
 
 </body>
 
