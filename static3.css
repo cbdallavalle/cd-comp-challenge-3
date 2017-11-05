@@ -4,6 +4,15 @@ body {
   color: #535353;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+button.search-bar:hover {
+  background-color: #44A4F2;
+  color: #FFFFFF;
+}
+
 hr {
   width: 95%;
   border: 1px solid #e0dddd;
@@ -30,6 +39,12 @@ h4 {
   color: #a8a8a8;
 }
 
+img {
+  width: 300px;
+    display: block;
+    margin: auto;
+}
+
 p {
   font-size: 13px;
 }
@@ -50,7 +65,6 @@ ul {
   position: relative;
   width: 93%;
   height: 20px;
-  margin-top: 72px;
   vertical-align: middle;
   box-sizing: border-box;
   margin: 32px 15px;
@@ -74,12 +88,15 @@ ul {
 
 .circles {
   display: inline-block;
-  width: 6.8em;
-  height: 6.8em;
+  width: 120px;
+  height: 99px;
   border-radius: 50%;
-  border: 1em solid;
+  border: 15px solid;
   border-color: #DDE6EB;
   text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .circles-container {
@@ -87,6 +104,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   border-top: 1px solid #e0dddd;
+  padding-top: 10px;
 }
 
 .copy-btn {
@@ -138,8 +156,7 @@ ul {
 
 .graph {
   width: 100%;
-  height: 200px;
-  background-color: pink;
+  height: 340px;
 }
 
 .head-sections {
@@ -152,6 +169,7 @@ ul {
 
 .job {
   text-align: center;
+  /*background-image: url('images/great-hall.jpg');*/
 }
 
 .job-btns {
@@ -161,6 +179,10 @@ ul {
   font-size: 16px;
   padding: 8px 11px;
   color: #535353;
+}
+
+.job-btns:hover {
+  background-color: rgba(210, 210, 210, 0.81);
 }
 
 .links {
@@ -197,15 +219,19 @@ ul {
 
 .pages {
   width: 100%;
-  background-color: #5C84BC;
+  background-color: #FFFFFF;
   height: 2em;
   padding-top: 1em;
+  margin: 10px 0 0 10px;
 }
 
 .pages li {
   display: none;
 }
 
+.percents {
+  font-size: 30px;
+}
 .profile-pic {
   width: 2.5em;
   height: 2.5em;
@@ -241,6 +267,7 @@ ul {
 }
 
 #blue {
+  border-color: rgba(30, 59, 91, 0.23);
   border-right-color: #1E3B5B;
 }
 
@@ -248,6 +275,7 @@ ul {
   font-size: 17px;
   margin: 0 0 0 15px;
   height: 20px;
+  color: #d2d2d2;
 }
 
 #description-div {
@@ -260,7 +288,8 @@ ul {
   font-weight: 700;
   margin-left: 10px;
   padding: 6px;
-  background-color: #8f99ae;
+  background-color: #818C9F;
+  color: #d2d2d2;
 }
 
 #edit-btn:hover {
@@ -272,15 +301,52 @@ ul {
 }
 
 #green {
+  display: block;
   background-color: #417F31;
   border: none;
+  margin: 15px auto;
+  color: #FFFFFF;
+  padding: 7px 9px;
+  border-radius: 14px;
+  font-size: 15px;
 }
+
+#green:hover {
+  background-color: rgba(82, 146, 65, 0.79);
+}
+
+#hermione-pic {
+  width: 100px;
+  position: absolute;
+  top: -42px;
+}
+
+#profile-container {
+  margin: 50px 15px;
+}
+
 
 #linkedIn {
   background-color: #3180B7;
 }
 
+#personality {
+  border: 1px solid #e0dddd;
+  background-color: #FFFFFF;
+  border-radius: 17px;
+  font-size: 15px;
+  padding: 8px 11px;
+  color: #535353;
+  margin: 12px auto;
+  display: block;
+}
+
+#personality:hover {
+  background-color: rgba(210, 210, 210, 0.81);
+}
+
 #red {
+  border-color: rgba(128, 10, 14, 0.18);
   border-right-color: #99282C;
   border-bottom-color: #99282C;
 }
@@ -294,6 +360,10 @@ ul {
 #summary {
   display: block;
   text-align: left;
+  font-weight: 700;
+  width: 131px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #44A4F2;
 }
 
 #three-bars {
@@ -310,6 +380,8 @@ ul {
 }
 
 #yellow {
+  border-color: rgba(195, 132, 48, 0.22);;
+  margin: 0 5px;
   border-right-color: #C38430;
 }
 
