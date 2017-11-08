@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>
@@ -17,40 +17,46 @@
 
   <!-- HEADER -->
   <header class="main-header">
-    <section>
+    <section class="profile-pic-container">
       <div class="profile-pic"></div>
       <h3>Sorting Hat <i class="fa fa-caret-down" aria-hidden="true"></i></h3>
     </section>
 
+    <hr>
+
     <nav class="main nav-bar">
+      <h4>Main</h4>
       <ul class="head-sections">
-        <h4>Main</h4>
-        <li>HOME</li>
-        <li>JOBS</li>
-        <li>RESUMES</li>
-        <li>TASKS</li>
-        <li>CALENDAR</li>
+        <li id="first"><i class="fa fa-user" aria-hidden="true"></i> TEACHERS</li>
+        <li><i class="fa fa-users" aria-hidden="true"></i> STUDENTS</li>
+        <li><i class="fa fa-certificate" aria-hidden="true"></i> HOUSES</li>
+        <li><i class="fa fa-snapchat-ghost" aria-hidden="true"></i> GHOSTS</li>
+        <li><i class="fa fa-paint-brush" aria-hidden="true"></i> PAINTINGS</li>
       </ul>
     </nav>
+
+    <hr>
 
      <nav class="admin nav-bar">
+      <h4>Admin</h4>
       <ul class="head-sections">
-        <h4>Admin</h4>
-        <li>USERS</li>
-        <li>LOCATION</li>
-        <li>WORKFLOWS</li>
-        <li>JOB BOARDS</li>
-        <li>SOCIAL</li>
+        <li id="first"><i class="fa fa-eercast" aria-hidden="true"></i> MAGIC</li>
+        <li><i class="fa fa-building" aria-hidden="true"></i> LOCATION</li>
+        <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> CLASSES</li>
+        <li><i class="fa fa-list-alt" aria-hidden="true"></i> JOB BOARDS</li>
+        <li><i class="fa fa-glass" aria-hidden="true"></i> SOCIAL</li>
       </ul>
     </nav>
 
-     <nav class="categories nav-bar">
-      <ul class="head-sections">
-        <h4>Categories</h4>
-        <li>Administration</li>
-        <li>Design</li>
-        <li>Executive</li>
-        <li>Human Resources</li>
+    <hr>
+
+     <nav class="categories nav-bar" id="last-nav-bar">
+      <h4>Categories</h4>
+      <ul class="head-sections" id="last-section">
+        <li id="first"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Daily Profit</li>
+        <li><i class="fa fa-gavel" aria-hidden="true"></i> Ministry</li>
+        <li><i class="fa fa-trophy" aria-hidden="true"></i> TriWizard</li>
+        <li><i class="fa fa-balance-scale" aria-hidden="true"></i> Gringotts</li>
       </ul>
     </nav>
   </header>
@@ -58,25 +64,28 @@
   <!-- SEARCH BAR -->
   <nav class="search-nav">
     <button class="search-bar" id="three-bars"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <div><i class="fa fa-search" id="search-tool" aria-hidden="true"></i></div>
     <label for="search-input"></label>
-    <input type="text" class="search-bar" id="search-input" placeholder="search"></input>
+    <input type="text" class="search-bar" id="search-input" placeholder="search">
     <button class="search-bar"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
     <button class="search-bar"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-    <button class="search-bar"><i class="fa fa-th" aria-hidden="true"></i></button>
+    <button class="search-bar" id="last-nav-btn"><i class="fa fa-th" aria-hidden="true"></i></button>
   </nav>
 
   <section class="job">
     <h1>Hermione Granger</h1>
     <ul class="location">
-      <li id="town"><i class="fa fa-map-marker" aria-hidden="true"></i>Hogwarts</li>
+      <li id="town"><i class="fa fa-map-marker" aria-hidden="true"></i> Hogwarts</li>
       <li>House to be named</li>
     </ul>
-    <button class="job-btns"><i class="fa fa-circle" aria-hidden="true"></i> Open</button>
-    <button class="job-btns"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
-    <button class="job-btns"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    <button class="job-btns"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+    <aside>
+      <button class="job-btns"><i class="fa fa-circle" aria-hidden="true"></i> Open</button>
+      <button class="job-btns"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+      <button class="job-btns"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+      <button class="job-btns"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+    </aside>
     <ul class="pages">
-      <li id="summary">HOUSE AFFINITY</li>
+      <li id="summary">HOUSE AFFINITY  <i class="fa fa-caret-right" aria-hidden="true"></i></li>
       <li>PERSONALITY</li>
       <li>LIKES</li>
       <li>DISLIKES</li>
@@ -88,20 +97,27 @@
 
   <section class="information">
     <section class="figure-container">
-      <form class="circles-container">
-        <div class="circles" id="red"><span class="percents">50%</span> Gryffindor
-        </div>
-        <div class="circles" id="yellow"><span class="percents">25%</span> Hufflepuff</div>
-        <div class="circles" id="blue"><span class="percents">25%</span> Ravenclaw</div>
-      </form>
-       <button id="green">Send to Slythrin</button>
+      <div class="circles-btn-container">
+        <form class="circles-container">
+          <div class="circles" id="red"><span class="percents">50%</span> Gryffindor
+          </div>
+          <div class="circles" id="yellow"><span class="percents">25%</span> Hufflepuff</div>
+          <div class="circles" id="blue"><span class="percents">25%</span> Ravenclaw</div>
+        </form>
+        <button id="green">Send to <span id="slythrin">Slythrin</span></button>
+       </div>
+
       <form class="graph">
         <img src="images/hermione-personality.png">
         <button id="personality">Personality Traits</button>
       </form>
     </section>
 
-    <hr id="page-break">
+    <div id="page-break">
+      <div id="break">
+        <hr class="page-line" id="first-break"><img src="images/arrow-up.png" id="page-break-btn"><hr class="page-line" id="last-break">
+      </div>
+    </div>
 
     <section class="description-container">
       <article class="character-container">
@@ -150,30 +166,31 @@
 
           <hr>
 
-            <p class="caption">HOUSE 
+            <p class="caption" id="last-table-element">HOUSE 
             <span class="answers">TBD</span>
             </p>
       </article>
 
       <article class="connect-container">
-        <button class="links" id="facebook">See Facebook</button>
-        <button class="links" id="twitter">See Twitter</button>
-        <button class="links" id="linkedIn">See Instagram</button>
+        <button class="links" id="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</button>
+        <button class="links" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</button>
+        <button class="links" id="linkedIn"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</button>
 
         <form class="connect-forms">
           <h2 class="connect-head"><i class="fa fa-envelope-o" aria-hidden="true"></i>   Send an Owl</h2>
-          <p>I come close. Let me show you everything I know. Jungle slang.</p>
+          <p>Post owls are quite intelligent, and can usually find their mail's recipient with little to no direction.</p>
           <label for="copy-job-link"></label>
-          <div class="copy-link">https://www.pottermore.com
+          <div class="copy-link">http://www.ministryof...
             <button class="copy-btn">Copy</button>
           </div>
         </form>
 
         <form class="connect-forms">
           <h2 class="connect-head"><i class="fa fa-address-card-o" aria-hidden="true"></i>  Check Patronus</h2>
-          <p>Silky smooth perfume. Wanna take a chance. Wanna sip the smooth.</p>
+          <p>Takes the form of an otter but will not come as easily to her as most other spells since she lacks the self-confidence. </p>
           <label for="copy-button-link"></label>
-          <div class="copy-link">https://www.pottermore.com
+          <div class="copy-link">
+            https://www.potterm...
             <button class="copy-btn">Copy</button>
           </div>
         </form>
@@ -181,9 +198,9 @@
 
         <form class="connect-forms">
           <h2 class="connect-head"><i class="fa fa-magic" aria-hidden="true"></i>   See Magical Abilities</h2>
-          <p>THis ain't gonna work, my mine wicked words and tipsy topsy slurs.</p>
+          <p>An extremely talented and powerful young witch. She practised several simple spells at home which all worked</p>
           <label for="copy-resume-link"></label>
-          <div class="copy-link">https://www.pottermore.com</div>
+          <div class="copy-link">http://harrypotter.wikia.com...</div>
         </form>
       </article>
     </section>
