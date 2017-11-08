@@ -145,7 +145,7 @@ ul {
 }
 
 .copy-btn:hover {
-  background-color: #89d0dat;
+  background-color: #89d0da;
 }
 
 .copy-link {
@@ -550,7 +550,7 @@ ul {
     border: none;
     display: block;
     height: 2px;
-    margin: 25px auto;
+    margin: 13px auto;
     width: 100%;
   }
 
