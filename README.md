@@ -6,4 +6,4 @@ The image to copy
 
 My webpage
 
-![screencapture-file-users-casey-turing-mod1-cd-comp-challenge-3-index-html-1510182447502](https://user-images.githubusercontent.com/28467245/32579654-2637a87a-c49f-11e7-91a4-50e8614f37d5.png)
+![screencapture-file-users-casey-turing-mod1-cd-comp-challenge-3-index-html-1510182447502](https://user-images.githubusercontent.com/28467245/32579779-a89c0f0e-c49f-11e7-9f3b-1ee4e95ef700.png)
